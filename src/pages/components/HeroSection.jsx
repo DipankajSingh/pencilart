@@ -26,7 +26,7 @@ function HeroSection() {
                 textToAnimate
                 after:bg-secondaryAccent
                 delay-2
-                '>life</span></h2>
+                '>life!</span></h2>
             <p className='heroParagraph mt-3'>"Discover and buy unique artwork from talented artists, and sell your sketches to a global community of art lovers. PencilArt is the perfect platform to showcase your creativity and explore new artistic styles."</p>
             <div className='
             flex
