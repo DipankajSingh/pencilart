@@ -33,7 +33,12 @@ function HeroSection() {
             justify-center
             '>
                 <button className='buttonHero'>Buy Now</button>
-                <button className='buttonHero'>Sell Now</button>
+                <button className='
+                text-[1.5rem]
+                text-center
+                mt-3
+                hover:text-secondaryAccent
+'>Sell Now</button>
             </div>
 
 
