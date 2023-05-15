@@ -215,7 +215,7 @@ body {
   position: absolute;
   z-index: -1;
   overflow: hidden;
-  opacity: .5;
+  opacity: .4;
 }
 
 .customersReview::after {
@@ -322,4 +322,41 @@ body {
 .customerReviewDiv>div>button:active,
 .customerReviewDiv>div>button:focus {
   color: rgb(var(--primary-accent));
+}
+
+.artistsReview>div {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.artistsReview>h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 5rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.artistsReview>div>div {
+  background-color: rgb(208, 208, 249);
+}
+
+.artistsReview>div>div>p {
+  color: red;
+  font-size: clamp(1rem, 1rem + 1vw, 3rem);
+  font-weight: 500;
+
+}
+
+.artistsReview>div>div>span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: clamp(2rem, 1rem + 1vw, 2rem);
+  text-transform: capitalize;
+}
+
+.artitsReviewImage {
+  width: calc(2vw + 9rem);
+  height: calc(2vw + 9rem);
 }

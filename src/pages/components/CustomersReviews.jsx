@@ -6,7 +6,7 @@ export default function CustomersReviews() {
     return (
         <div>
             <h2 className='
-            text-[2rem]
+            text-[1.8rem]
             font-extrabold
             w-max
             bg
@@ -16,12 +16,11 @@ export default function CustomersReviews() {
             relative
             capitalize
             customersReview
-            
             ' ><span className='
             bg-gradient-to-r
-            from-secondaryAccent
-            via-black
-            to-secondaryAccent
+            from-black
+            via-secondaryAccent
+            to-black
             bg-clip-text
             text-[transparent]
             '>"what our Customers Says,,</span></h2>
@@ -57,7 +56,7 @@ export default function CustomersReviews() {
                 <div>
                     <div>
 
-                        <span>Secret Name</span>
+                        <span>Senorita</span>
                         <span className='flex'>
                             <ReviewStar />
                             <ReviewStar />
