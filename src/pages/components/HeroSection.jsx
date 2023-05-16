@@ -10,9 +10,8 @@ function HeroSection() {
         mt-[8rem]
         px-12
         h-max
-        mb-4
         `}>
-            <div className='relative inline-block bg-primaryAccent shadow-lg heroImage'>
+            <div className='relative inline-block bg-[#7a74742c] shadow-lg heroImage'>
                 <Image height={300} width={400} src={'/Icons/heroImage.png'} />
             </div>
             <h2 className='
@@ -21,7 +20,7 @@ function HeroSection() {
                 font-hero
                 '><span className='
                 textToAnimate
-                after:bg-primaryAccent
+                after:bg-secondaryAccent
                 '>where</span> art comes to <span className='
                 textToAnimate
                 after:bg-secondaryAccent

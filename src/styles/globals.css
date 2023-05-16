@@ -56,12 +56,6 @@ body {
   scale: 1;
 }
 
-@media(min-width:640px) {
-  .mainHero {
-    height: calc(100% - 4rem);
-  }
-}
-
 
 #__next {
   height: 100vh;
@@ -70,7 +64,7 @@ body {
 
 .heroImage {
   float: right;
-  border-radius: 30% 70% 70% 30% / 45% 39% 61% 55%;
+  border-radius: 30% 70% 60% 30% / 45% 39% 71% 55%;
   shape-outside: circle(183px at center center);
   margin-left: 2rem;
   z-index: 2;
@@ -155,7 +149,8 @@ body {
   display: grid;
   position: relative;
   height: max-content;
-  width: 16rem;
+  min-width: 17rem;
+  max-width: 24rem;
   padding: .9rem;
 }
 
@@ -242,7 +237,8 @@ body {
 
 .customerReviewDiv>div {
   position: relative;
-  width: 17rem;
+  min-width: 17rem;
+  max-width: 24rem;
   padding: .5rem;
   z-index: 1;
   overflow: hidden;
@@ -259,7 +255,7 @@ body {
   scale: 1.02;
 }
 
-.customerReviewDiv>div:nth-child(1) {
+/* .customerReviewDiv>div:nth-child(1) {
   border: 2px solid var(--color1);
 }
 
@@ -269,7 +265,7 @@ body {
 
 .customerReviewDiv>div:nth-child(3) {
   border: 2px solid var(--color3);
-}
+} */
 
 .customerReviewDiv>div::after {
   position: absolute;
@@ -337,11 +333,12 @@ body {
 }
 
 .artistsReview>div>div {
-  background-color: rgb(208, 208, 249);
+  margin: 1rem;
 }
 
 .artistsReview>div>div>p {
-  color: red;
+  color: var(--primary-accent);
+  font-family: cursive;
   font-size: clamp(1rem, 1rem + 1vw, 3rem);
   font-weight: 500;
 

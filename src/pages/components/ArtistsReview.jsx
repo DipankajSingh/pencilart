@@ -10,7 +10,12 @@ export default function ArtistsReview() {
         '>{/*card type Design*/}
             <h1 className='
             capitalize
-
+            bg-gradient-to-r
+            from-[purple]
+            via-[#80ff00]
+            to-secondaryAccent
+            bg-clip-text
+            text-[transparent]
             '>artists are our special power</h1>
             <div className='relative'>
                 <div className='relative'>

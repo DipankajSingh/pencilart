@@ -18,9 +18,9 @@ export default function CustomersReviews() {
             customersReview
             ' ><span className='
             bg-gradient-to-r
-            from-black
-            via-secondaryAccent
-            to-black
+            from-secondaryAccent
+            via-[#80ff00]
+            to-secondaryAccent
             bg-clip-text
             text-[transparent]
             '>"what our Customers Says,,</span></h2>
