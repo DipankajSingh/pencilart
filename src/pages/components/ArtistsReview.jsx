@@ -18,7 +18,7 @@ export default function ArtistsReview() {
             text-[transparent]
             '>artists are our special power</h1>
             <div className='relative'>
-                <div className='relative'>
+                <div className='relative float-left'>
                     <div className='
                     relative
                     ml-auto

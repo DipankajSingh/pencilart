@@ -203,6 +203,7 @@ body {
 
 .customersReview {
   z-index: -11;
+  font-size: clamp(1rem, 1rem + 3vw, 5rem);
 }
 
 .customersReview::after,
@@ -274,7 +275,7 @@ body {
   width: 5rem;
   z-index: -1;
   bottom: 85%;
-  left: 80%;
+  left: 90%;
   border-radius: 50%;
   transition: transform 300ms;
 
@@ -322,26 +323,27 @@ body {
 
 .artistsReview>div {
   display: flex;
-  flex-direction: column;
-
+  flex-wrap: wrap;
 }
 
 .artistsReview>h1 {
-  font-size: clamp(2rem, 1rem + 3vw, 5rem);
+  font-size: clamp(2rem, 2rem + 3vw, 5rem);
   font-weight: 700;
   text-align: center;
 }
 
 .artistsReview>div>div {
-  margin: 1rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  max-width: 26rem;
+  min-width: 18;
 }
 
 .artistsReview>div>div>p {
-  color: var(--primary-accent);
   font-family: cursive;
   font-size: clamp(1rem, 1rem + 1vw, 3rem);
   font-weight: 500;
-
+  color: gray;
 }
 
 .artistsReview>div>div>span {
@@ -351,6 +353,8 @@ body {
   font-weight: 600;
   font-size: clamp(2rem, 1rem + 1vw, 2rem);
   text-transform: capitalize;
+  color: rgb(var(--secondary-accent)/.9);
+
 }
 
 .artitsReviewImage {

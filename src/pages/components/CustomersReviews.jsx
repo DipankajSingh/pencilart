@@ -6,7 +6,6 @@ export default function CustomersReviews() {
     return (
         <div>
             <h2 className='
-            text-[1.8rem]
             font-extrabold
             w-max
             bg
