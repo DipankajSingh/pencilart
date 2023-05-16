@@ -22,7 +22,7 @@ export default function CustomersReviews() {
             to-secondaryAccent
             bg-clip-text
             text-[transparent]
-            '>"what our Customers Says,,</span></h2>
+            '>Happy Customer's</span></h2>
             <div className='customerReviewDiv mt-10'>
                 <div>
                     <div>
