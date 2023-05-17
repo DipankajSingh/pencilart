@@ -1,22 +1,18 @@
+import Image from 'next/image';
 import React from 'react';
 
 function Footer() {
     return (
-        <footer>
+        <footer className='
+        bg-black
+        text-primaryAccent
+        p-5
+        '>
             <div >
-                <div >
-                    <h2>About Us</h2>
-                    <p>At PencilArt, we're passionate about connecting artists and art lovers.</p>
-                </div>
-                <div >
-                    <h2>Links</h2>
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/about">About Us</a></li>
-                        <li><a href="/shop">Shop</a></li>
-                        <li><a href="/contact">Contact Us</a></li>
-                    </ul>
-                </div>
+                <p className='
+                text-center
+                text-lg
+                '>At PencilArt, we're passionate about connecting artists and art lovers.</p>
                 <div >
                     <h2>Subscribe to Our Newsletter</h2>
                     <form action="#">
@@ -24,14 +20,30 @@ function Footer() {
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
-                <div >
-                    <h2>Accepted Payment Methods</h2>
-                    <img src="https://www.paypalobjects.com/webstatic/mktg/logo-center/PP_Acceptance_Marks_for_LogoCenter_266x142.png" alt="PayPal" />
-                    <img src="https://www.mastercard.us/content/dam/mccom/en-us/consumers/images/logos/mastercard_logo_small.png" alt="Mastercard" />
-                    <img src="https://cdn.worldvectorlogo.com/logos/visa-3.svg" alt="Visa" />
+
+                <div className='text-center
+                bg-secondaryAccent'>
+                    <div className='
+                
+                ' >
+                        <h2>Links</h2>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/shop">Shop</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div className='flex gap-2 flex-wrap'>
+                        <a href="#" target="_blank" rel="noopener noreferrer">UPI</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">Credit card</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">debit card</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer">net banking</a>
+                    </div>
                 </div>
             </div>
-            <div >
+            <div className='relative bottom-0 text-center'>
                 <p>&copy; 2023 PencilArt - All Rights Reserved</p>
             </div>
         </footer>

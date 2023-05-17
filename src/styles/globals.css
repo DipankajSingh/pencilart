@@ -340,7 +340,7 @@ body {
 }
 
 .artistsReview>div>div>p {
-  font-family: cursive;
+  font-family: 'Courier New', Courier, monospace;
   font-size: clamp(1rem, 1rem + 1vw, 3rem);
   font-weight: 500;
   color: gray;
