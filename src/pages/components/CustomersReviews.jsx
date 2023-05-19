@@ -41,7 +41,7 @@ export default function CustomersReviews() {
                 <div>
                     <div>
 
-                        <span>Reyansh</span>
+                        <span>John helter</span>
                         <span className='flex'>
                             <ReviewStar />
                             <ReviewStar />
@@ -55,7 +55,7 @@ export default function CustomersReviews() {
                 <div>
                     <div>
 
-                        <span>Senorita</span>
+                        <span>Alice ase</span>
                         <span className='flex'>
                             <ReviewStar />
                             <ReviewStar />

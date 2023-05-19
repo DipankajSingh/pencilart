@@ -31,7 +31,7 @@ function HeroSection() {
             flex
             justify-center
             '>
-                <button className='buttonHero'>Buy Now</button>
+                <button className='buttonHero  '>Buy Now</button>
                 <button className='
                 text-[1.5rem]
                 text-center

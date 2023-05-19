@@ -149,7 +149,8 @@ body {
   display: grid;
   position: relative;
   height: max-content;
-  min-width: 17rem;
+  margin: 1rem;
+  min-width: 20rem;
   max-width: 24rem;
   padding: .9rem;
 }
@@ -180,7 +181,8 @@ body {
 }
 
 .high4parent {
-  width: 20rem !important;
+  max-width: 30rem !important;
+  margin: 1rem !important;
 }
 
 .highlight>div:hover>div:first-child::after,
@@ -360,4 +362,12 @@ body {
 .artitsReviewImage {
   width: calc(2vw + 9rem);
   height: calc(2vw + 9rem);
+}
+
+.aboutSmall>h5 {
+  font-size: clamp(2rem, 2rem + 1vw, 5rem);
+}
+
+.aboutSmall>p {
+  font-size: clamp(1rem, 1rem + 1vw, 3rem);
 }

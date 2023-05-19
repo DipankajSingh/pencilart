@@ -8,9 +8,10 @@ export default function Highlight() {
             w-screen
             highlight
             [&>div>div>h4]:font-extrabold
-            [&>div>div>h4]:text-[1.2rem]
+            [&>div>div>h4]:text-[1.5rem]
             [&>div>div>h4]:capitalize
             [&>div>div>p]:font-semibold
+            [&>div>div>p]:text-2xl
             [&>div>div>p]:text-[#4d4b4b]
             [&>div>div>svg>path]:fill-secondaryAccent
         '>
