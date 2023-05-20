@@ -13,6 +13,7 @@ function Footer() {
                 <p className='
                 text-center
                 text-lg
+                mb-4
                 '>At PencilArt, we're passionate about connecting artists and art lovers.</p>
                 <div >
                     <form action="#" className='
@@ -33,8 +34,8 @@ function Footer() {
                             <input className='
                             h-14
                             w-[20rem]
-                            text-center
                             rounded-lg
+                            pl-4
                             newsLetterEmail
                             [&:focus+h2]:text-[white]
                             [&:focus+h2]:p-[unset]
@@ -42,26 +43,27 @@ function Footer() {
                             [&:focus+h2]:w-max
                             [&:focus+h2]:px-3
                             [&:focus+h2]:left-3
-                            [&:focus+h2]:top-[-.7rem]
-                            [&:focus+h2]:bg-[blue]
+                            [&:focus+h2]:top-[-1.5rem]
                             focus:placeholder:text-[grey]
                             placeholder:text-[white]
-                            transition-all
+                        outline-none
                             
-                            ' type="email"
-                                placeholder='Enter your Email' />
+                            '
+                                required
+                                type="email"
+                                placeholder='Enter your Email'
+
+                            />
                             <h2 className='
                         absolute
                         flex
                         justify-center
                         items-center
                         pointer-events-none
-                        inset-0
-                        h-full
-                        w-full
-                        text-center
-                        p-3
+                        top-4
+                        left-3
                         transition-all
+                        
                         ' >Subscribe to Our Newsletter</h2>
                         </div>
                         <button className='
@@ -75,11 +77,16 @@ function Footer() {
                 </div>
 
                 <div className='text-center
+                flex
+                justify-center
+                gap-16
+                flex-wrap
+                mb-5
                 '>
                     <div className='
                 
                 ' >
-                        <h2>Links</h2>
+                        <span className='text-2xl font-bold'>Links</span>
                         <ul>
                             <li><a href="/">Home</a></li>
                             <li><a href="/about">About Us</a></li>
@@ -88,7 +95,8 @@ function Footer() {
                         </ul>
                     </div>
 
-                    <div className='flex gap-2 flex-wrap'>
+                    <div className='flex flex-col flex-wrap'>
+                        <span className='text-2xl font-bold'>Payment methods</span>
                         <a href="#" target="_blank" rel="noopener noreferrer">UPI</a>
                         <a href="#" target="_blank" rel="noopener noreferrer">Credit card</a>
                         <a href="#" target="_blank" rel="noopener noreferrer">debit card</a>

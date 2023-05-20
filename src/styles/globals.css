@@ -255,7 +255,7 @@ body {
 .customerReviewDiv>div:hover,
 .customerReviewDiv>div:active,
 .customerReviewDiv>div:focus {
-  scale: 1.02;
+  scale: 1;
 }
 
 /* .customerReviewDiv>div:nth-child(1) {
@@ -296,7 +296,7 @@ body {
 }
 
 .customerReviewDiv>div:hover::after {
-  transform: scale(12);
+  transform: scale(14);
 }
 
 .customerReviewDiv>div>div>span {
@@ -308,8 +308,10 @@ body {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   color: rgb(77, 75, 75);
+  font-size: large;
+
 }
 
 .customerReviewDiv>div>button {
