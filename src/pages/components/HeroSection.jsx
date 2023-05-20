@@ -7,11 +7,11 @@ function HeroSection() {
         relative
         w-screen
         mainHero
-        mt-[8rem]
-        px-12
+        mt-[5rem]
+        px-10
         h-max
         `}>
-            <div className='relative inline-block bg-[#7a74742c] shadow-lg heroImage'>
+            <div className='relative inline-block bg-primaryAccent shadow-lg heroImage'>
                 <Image height={300} width={400} src={'/Icons/heroImage.png'} />
             </div>
             <h2 className='
