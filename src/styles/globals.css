@@ -373,3 +373,17 @@ body {
 .aboutSmall>p {
   font-size: clamp(1rem, 1rem + 1vw, 3rem);
 }
+
+.topPicksHolder {
+  color: rgb(var(--primary-accent));
+
+}
+
+.productCard {
+  width: calc(25rem + 2vw);
+  max-width: 36rem;
+  min-width: 25rem;
+  height: calc(29rem + 2vw);
+  max-height: 40rem;
+  min-height: 29rem;
+}
