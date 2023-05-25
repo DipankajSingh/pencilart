@@ -1,6 +1,21 @@
 import Image from 'next/image'
 import React from 'react'
 
+const imageAndDetail = [
+    {
+        pic: 'pic2.jpg',
+        title: 'Pencil scketch of an angel by a telented'
+    },
+    {
+        pic: 'pic3.jpg',
+        title: 'Mind of a boy painting'
+    },
+    {
+        pic: 'pic2.jpg',
+        title: 'that angel again'
+    }
+]
+
 function TopPicks() {
     return (<>
         <h2 className='
@@ -8,33 +23,37 @@ function TopPicks() {
         font-semibold
         ml-11
         my-4
-        '>Today's Top Picks</h2>
+        '>Today's Top Picks <br />
+        </h2>
         <div className='
         topPicksHolder
+        px-7
         relative
         flex
         flex-wrap
         justify-center
         gap-6
         '>
-            {[1, 2, 3].map((key) => {
-                return <div key={key} className='
+            {imageAndDetail.map((prop) => {
+                return <div key={prop.pic} className='
                 productCard
                 relative
                 flex
                 flex-col
+                rounded-md
+                overflow-hidden
                 '>
-                    <div className='productCard__image relative h-4/5'>
+                    <div className=' transition-[scale] origin-center productCard__image relative h-4/5'>
                         <Image fill={true}
-                            src={'/images/pic2.jpg'} />
+                            src={`/images/${prop.pic}`} />
                     </div>
                     <div className='
                     productCard__summary
                     p-4
-                    bg-[#2e312c]
                     '>
                         <div className='flex justify-between mb-3'>
-                            <h3 className='text-lg font-bold capitalize'>A princess</h3>
+                            <h3 className='text-lg font-bold
+                            break-words capitalize'>{prop.title}</h3>
                             {/* have to fix this */}
                             <button title='Add To Cart' className='
                             mr-7
@@ -49,23 +68,9 @@ function TopPicks() {
                         </div>
                         <div className='flex justify-between'>
                             <span className='text-3xl font-extrabold'>$ 999 </span>
-                            <button title='Looks good? click to buy now!' className='
-                            bg-secondaryAccent
-                            transition-all
-                            px-3
-                            rounded-lg
-                            font-extrabold
-                            capitalize
-                            text-2xl
-                            font-[monospace]
-                            hover:border-black
-                            active:border-black
-                            focus:border-black
-                            border-[3px]
-                            hover:outline
-                            active:outline
-                            focus:outline
-                            ' >look</button>
+                            <button title='Looks good? click to buy now!' role='button' className='
+                            button-77
+                            ' >view</button>
                         </div>
                     </div>
                 </div>
