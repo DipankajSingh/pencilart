@@ -11,17 +11,17 @@ function HeroSection() {
         px-10
         h-max
         `}>
-            <div className='relative inline-block bg-primaryAccent shadow-lg heroImage'>
+            <div className='relative inline-block bg-heroColor heroImage'>
                 <Image height={300} width={400} src={'/Icons/heroImage.png'} />
             </div>
             <h2 className='
                 heroTitle
                 md:text-center
                 font-hero
-                '><span className='
+                '>Where <span className='
                 textToAnimate
                 after:bg-secondaryAccent
-                '>where</span> art comes to <span className='
+                '>Art</span> comes to <span className='
                 textToAnimate
                 after:bg-secondaryAccent
                 delay-2

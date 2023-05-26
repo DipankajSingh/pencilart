@@ -21,7 +21,8 @@ module.exports = {
       primaryAccent: 'rgb(var(--primary-accent) / <alpha-value>)',
       secondaryAccent: 'rgb(var(--secondary-accent) / <alpha-value>)',
       backgroundPrimary: 'rgb(var(--background-primary) / <alpha-value>)',
-      black: "rgb(0 0 0 / <alpha-value>)"
+      black: "rgb(0 0 0 / <alpha-value>)",
+      heroColor: 'rgb(var(--heroColor) / <alpha-value>)',
     }
   },
   plugins: [],
