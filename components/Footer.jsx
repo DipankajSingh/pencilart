@@ -1,7 +1,12 @@
 import Image from 'next/image';
 import React from 'react';
-
+import Yt from './Yt'
+import Insta from './Insta';
+import Twitter from './Twitter';
 function Footer() {
+    const socialIconSize = 28
+
+
     return (
         <footer className='
         bg-black
@@ -13,8 +18,26 @@ function Footer() {
                 <p className='
                 text-center
                 text-lg
-                mb-4
+                mb-1
                 '>At PencilArt, we're passionate about connecting artists and art lovers.</p>
+                <span className='flex gap-10 justify-center [&>a]:outline-none '>
+                    <a className='
+                    hover:text-[#ff0cb6]
+                    focus:text-[#ff0cb6]
+                    active:text-[#ff0cb6]
+                    ' href="#"><Insta size={socialIconSize} /></a>
+                    <a className='
+                    hover:text-[#16dadd]
+                    focus:text-[#16dadd]
+                    active:text-[#16dadd]
+                    ' href="#"><Twitter size={socialIconSize} /></a>
+                    <a className='
+                    hover:text-[#ff1a1a]
+                    focus:text-[#ff1a1a]
+                    active:text-[#ff1a1a]
+                    ' href="#"><Yt size={socialIconSize} /></a>
+                </span>
+
                 <div >
                     <form action="#" className='
                     flex
@@ -44,6 +67,15 @@ function Footer() {
                             [&:focus+h2]:px-3
                             [&:focus+h2]:left-3
                             [&:focus+h2]:top-[-1.5rem]
+
+                            [&:not(:placeholder-shown)+h2]:text-[white]
+                            [&:not(:placeholder-shown)+h2]:p-[unset]
+                            [&:not(:placeholder-shown)+h2]:h-max
+                            [&:not(:placeholder-shown)+h2]:w-max
+                            [&:not(:placeholder-shown)+h2]:px-3
+                            [&:not(:placeholder-shown)+h2]:left-3
+                            [&:not(:placeholder-shown)+h2]:top-[-1.5rem]
+
                             focus:placeholder:text-[grey]
                             placeholder:text-[white]
                         outline-none
@@ -79,7 +111,7 @@ function Footer() {
                 <div className='text-center
                 flex
                 justify-center
-                gap-16
+                gap-10
                 flex-wrap
                 mb-5
                 '>
